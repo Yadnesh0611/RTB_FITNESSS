@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raise The Bar Ladies Gym is Chhatrapati Sambhajinagar's (Aurangabad) premier women-only fitness and transformation center. Specializing in weight loss, strength training, Zumba, PCOS, and thyroid health under owner Mrs. Vaishali Bajpeyi.">
+    <meta name="keywords" content="Ladies Gym in Chhatrapati Sambhajinagar, Ladies Gym in Aurangabad, Women's Fitness Center, Weight Loss Gym, Ladies Fitness Studio, Women Transformation Center, Women's Personal Training, Best Ladies Gym Near Me, PCOS fitness Aurangabad">
+    <meta name="author" content="Raise The Bar Ladies Gym">
+    <title>Raise The Bar Ladies Gym | Women's Transformation Center, Chhatrapati Sambhajinagar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <span><i class="fa-solid fa-fire-flame-simple"></i> Join the 21-Day Transformation Challenge! Limited Slots Left. <a href="#challenge" class="bar-link">Learn More &rarr;</a></span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-main">RAISE THE BAR</span>
+                <span class="logo-sub">LADIES GYM</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Programs</a></li>
+                    <li><a href="#challenge" class="nav-link">21-Day Challenge</a></li>
+                    <li><a href="#transformations" class="nav-link">Success Stories</a></li>
+                    <li><a href="#pricing" class="nav-link">Memberships</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#faq" class="nav-link">FAQs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="tel:+919876543210" class="header-phone"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+                <button class="btn btn-primary open-modal-btn">Book Free Trial</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-section" id="home">
+        <div class="hero-background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url('assets/hero_bg.jpg');"></div>
+        <div class="container hero-container">
+            <div class="hero-content scroll-reveal fade-in">
+                <div class="badge-container">
+                    <span class="hero-badge"><i class="fa-solid fa-venus"></i> 100% Women-Only Space</span>
+                </div>
+                <h1 class="hero-title">Raise Your Strength.<br>Build Your <span class="highlight-text">Confidence.</span></h1>
+                <p class="hero-description">Chhatrapati Sambhajinagar's premier transformation center tailored exclusively for women. Experience personal coaching, nutrition support, and an empowering community that helps you thrive.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg open-modal-btn">Start Your Transformation</button>
+                    <a href="#transformations" class="btn btn-outline btn-lg"><i class="fa-solid fa-circle-play"></i> Watch Success Stories</a>
+                </div>
+                
+                <!-- Trust Highlights -->
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved highlight-icon"></i>
+                        <span>Safe & Secure Environment</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-user-doctor highlight-icon"></i>
+                        <span>PCOS & Thyroid Fitness Support</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-star highlight-icon"></i>
+                        <span>Certified Female Trainers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Trial Booking Widget -->
+            <div class="hero-widget scroll-reveal slide-up">
+                <h3>Claim Your 2-Day Free Pass</h3>
+                <p>Start your fitness journey today. No obligations, just results.</p>
+                <form id="heroTrialForm" class="widget-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <select required class="form-control">
+                            <option value="" disabled selected>Select Main Goal</option>
+                            <option value="weight-loss">Weight Loss</option>
+                            <option value="pcos">PCOS / Thyroid Support</option>
+                            <option value="strength">Strength & Toning</option>
+                            <option value="zumba">Zumba & Cardio</option>
+                            <option value="pregnancy">Post-Pregnancy Recovery</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Book My Free Pass &rarr;</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Trust Bar -->
+    <section class="stats-section">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <span class="stat-number" data-target="1500">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Happy Transformations</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Certified Female Coaches</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Workout Programs</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card flex-center">
+                <div class="rating-box">
+                    <span class="rating-num">4.9</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <span class="stat-label">Google Rating (250+ Reviews)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container grid-2">
+            <div class="about-image-wrapper scroll-reveal slide-up">
+                <img src="assets/vaishali_bajpeyi.jpg" alt="Mrs. Vaishali Bajpeyi - Owner & Founder of Raise The Bar" class="about-image" style="object-position: top;">
+                <div class="about-overlay-card">
+                    <span class="owner-title">Mrs. Vaishali Bajpeyi</span>
+                    <span class="owner-subtitle">Founder & Chief Fitness Coach</span>
+                </div>
+            </div>
+            
+            <div class="about-content scroll-reveal fade-in">
+                <span class="section-badge">ABOUT RAISE THE BAR</span>
+                <h2 class="section-title">A Transformation Center Built <span class="highlight-text">For Women.</span></h2>
+                <p class="about-story">Founded by <strong>Mrs. Vaishali Bajpeyi</strong>, Raise The Bar Ladies Gym is built on a simple yet powerful belief: <em>Every woman deserves personal attention instead of being treated as just another membership card.</em></p>
+                <p class="about-text">We are not just a gym. We are a supportive community where women in Chhatrapati Sambhajinagar come to reclaim their health, build strength, boost self-confidence, and completely improve their quality of life. Whether you are a busy housewife, a dedicated doctor, a teacher, a corporate professional, or a mother recovering your confidence post-pregnancy, we provide a safe, comfortable, and motivating environment for your fitness journey.</p>
+                
+                <!-- Mission and Vision sub-grid -->
+                <div class="mission-vision-grid">
+                    <div class="mission-box">
+                        <h3><i class="fa-solid fa-bullseye text-primary"></i> Our Mission</h3>
+                        <p>To empower women by offering customized coaching, absolute safety, structured nutrition, and continuous accountability to achieve long-term lifestyle changes.</p>
+                    </div>
+                    <div class="mission-box">
+                        <h3><i class="fa-solid fa-eye text-accent"></i> Our Vision</h3>
+                        <p>Become the most trusted ladies-only fitness and transformation brand in Aurangabad, uniting women in health and building life-changing confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal fade-in">
+                <span class="section-badge">OUR PROGRAMS</span>
+                <h2 class="section-title">Tailored Fitness Services For Every Stage of Life</h2>
+                <p class="section-subtitle">No matter your fitness level, we have a specialized program designed to help you reach your goals in a safe and supportive space.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Weight Loss -->
+                <div class="service-card scroll-reveal slide-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-weight-scale service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Weight Loss Programs</h3>
+                    <p class="service-desc">Designed to burn fat, build lean muscle, and boost metabolism using custom exercise regimes combined with healthy, sustainable nutrition plans.</p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check text-primary"></i> Customized Diet Charts</li>
+                        <li><i class="fa-solid fa-check text-primary"></i> Weekly Progress Review</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2: Strength & Functional -->
+                <div class="service-card scroll-reveal slide-up" style="animation-delay: 0.1s;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-dumbbell service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Strength & Functional Training</h3>
+                    <p class="service-desc">Improve your bones density, physical posture, core strength, and overall functional fitness for daily tasks through structured resistance training.</p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check text-primary"></i> Correct Form Training</li>
+                        <li><i class="fa-solid fa-check text-primary"></i> Injury Prevention</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3: High Energy Zumba -->
+                <div class="service-card scroll-reveal slide-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-music service-icon"></i>
+                    </div>
+                    <h3 class="service-title">High-Energy Zumba Classes</h3>
+                    <p class="service-desc">Burn calories while dancing to fantastic beats in a high-energy group environment. Perfect for cardiovascular health, stamina, and stress relief.</p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check text-primary"></i> Certified Zumba Instructors</li>
+                        <li><i class="fa-solid fa-check text-primary"></i> Fun & Social Atmosphere</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: PCOS & Thyroid Programs -->
+                <div class="service-card scroll-reveal slide-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-heart-pulse service-icon"></i>
+                    </div>
+                    <h3 class="service-title">PCOS & Thyroid Management</h3>
+                    <p class="service-desc">Specialized training programs designed to balance hormones, decrease insulin resistance, reduce stress, and aid weight management safely.</p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check text-primary"></i> Hormonal Health Workouts</li>
+                        <li><i class="fa-solid fa-check text-primary"></i> Anti-Inflammatory Diet Guide</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: Personal Training -->
+                <div class="service-card scroll-reveal slide-up" style="animation-delay: 0.1s;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-user-check service-icon"></i>
+                    </div>
+                    <h3 class="service-title">1-on-1 Personal Training</h3>
+                    <p class="service-desc">Get undivided attention, custom workout routines, and direct, daily accountability with a personal coach focused entirely on your transformation.</p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check text-primary"></i> Rapid Results Roadmap</li>
+                        <li><i class="fa-solid fa-check text-primary"></i> 100% Dedicated Support</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6: Post-Pregnancy Recovery -->
+                <div class="service-card scroll-reveal slide-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-child-reaching service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Post-Pregnancy Recovery</h3>
+                    <p class="service-desc">Safely rebuild core strength, work on diastasis recti, regain stamina, and rebuild confidence in a supportive, gentle progression program.</p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check text-primary"></i> Safe Diastasis-Friendly Exercises</li>
+                        <li><i class="fa-solid fa-check text-primary"></i> Mood & Energy Enhancing</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center services-cta scroll-reveal fade-in">
+                <p>Not sure which program is right for you?</p>
+                <button class="btn btn-accent open-modal-btn">Talk To Our Trainer Today</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 21-Day Transformation Challenge -->
+    <section class="challenge-section" id="challenge">
+        <div class="container">
+            <div class="challenge-card scroll-reveal slide-up" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 30%, rgba(227, 28, 37, 0.4)), url('assets/challenge.jpg');">
+                <div class="challenge-content">
+                    <span class="challenge-tag"><i class="fa-solid fa-focus text-accent"></i> DARE TO TRANSFORM</span>
+                    <h2 class="challenge-title">The Famous 21-Day Transformation Challenge</h2>
+                    <p class="challenge-desc">Kickstart your health journey and see noticeable results in just 3 weeks. This high-accountability challenge is designed to set you up for long-term consistency.</p>
+                    
+                    <div class="challenge-points">
+                        <div class="point-item">
+                            <i class="fa-solid fa-clipboard-list point-icon"></i>
+                            <div>
+                                <h4>Custom 21-Day Meal Plan</h4>
+                                <p>Easy-to-follow nutrition tailored for home-cooked Indian meals.</p>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <i class="fa-solid fa-people-group point-icon"></i>
+                            <div>
+                                <h4>Daily Group Accountability</h4>
+                                <p>Stay motivated with fellow sisters aiming for similar fitness goals.</p>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <i class="fa-solid fa-chart-line point-icon"></i>
+                            <div>
+                                <h4>Weekly Body Assessment</h4>
+                                <p>Track fat loss, muscle gain, energy changes, and measurements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-cta-container">
+                        <button class="btn btn-primary btn-lg open-modal-btn">Join the 21-Day Challenge</button>
+                        <span class="limited-spots"><i class="fa-solid fa-users-slash"></i> Only 7 slots left for the August batch!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Before/After Slider -->
+    <section class="transformations-section" id="transformations">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal fade-in">
+                <span class="section-badge">REAL TRANSFORMATION</span>
+                <h2 class="section-title">See The Power of Personal Attention</h2>
+                <p class="section-subtitle">No empty promises. Swipe/drag the bar to see real fitness progress achieved through consistency and professional guidance.</p>
+            </div>
+            
+            <div class="slider-wrapper scroll-reveal scale-up">
+                <!-- Custom Before After Slider Container -->
+                <div class="ba-slider" id="baSlider">
+                    <!-- Before Image (Base) -->
+                    <img src="assets/transformation_b.jpg" alt="Transformation Before" class="image-before">
+                    
+                    <!-- After Image (Overlayed) -->
+                    <div class="image-after-container" id="afterContainer">
+                        <img src="assets/transformation_a.jpg" alt="Transformation After" class="image-after">
+                    </div>
+                    
+                    <!-- The Drag Slider handle -->
+                    <div class="slider-handle" id="sliderHandle">
+                        <div class="handle-line"></div>
+                        <div class="handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                        <div class="handle-line"></div>
+                    </div>
+                    
+                    <!-- Badges -->
+                    <span class="label-badge before-badge">BEFORE</span>
+                    <span class="label-badge after-badge">AFTER</span>
+                </div>
+                
+                <div class="transformation-details">
+                    <div class="success-stat">
+                        <h3>-12 Kilograms</h3>
+                        <p>Total Weight Loss in 12 Weeks</p>
+                    </div>
+                    <div class="success-stat">
+                        <h3>PCOS Reversed</h3>
+                        <p>Balanced Hormones, Clearer Skin</p>
+                    </div>
+                    <div class="success-stat">
+                        <h3>Energy Doubled</h3>
+                        <p>Active all day without afternoon crashes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container grid-2">
+            <div class="why-content scroll-reveal fade-in">
+                <span class="section-badge">WHY CHOOSE US</span>
+                <h2 class="section-title">A Safe, Comfortable, and Uplifting Place Just For You</h2>
+                <p class="why-desc">We understand that walking into a generic gym can feel intimidating. That's why we've designed Raise The Bar to be a sanctuary for women's fitness.</p>
+                
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon-box"><i class="fa-solid fa-shield-cat"></i></div>
+                        <div>
+                            <h4>100% Female Environment</h4>
+                            <p>Train with complete freedom, comfort, and zero self-consciousness. Perfect for all backgrounds.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon-box"><i class="fa-solid fa-face-smile-beam"></i></div>
+                        <div>
+                            <h4>Friendly & Supportive Coaches</h4>
+                            <p>Our trainers are understanding, certified, and fully focused on female physiology and training methods.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon-box"><i class="fa-solid fa-users"></i></div>
+                        <div>
+                            <h4>Motivating Sisterhood Community</h4>
+                            <p>Join a network of supportive women who celebrate each other's small and big fitness victories.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon-box"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>Flexible Timings</h4>
+                            <p>Open early mornings to late evenings. Easily fits the schedule of working women and busy mothers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-image-grid scroll-reveal slide-up">
+                <!-- Stacked premium image elements -->
+                <div class="why-img-card main-card">
+                    <img src="assets/strength.jpg" alt="Woman strength training at Raise The Bar">
+                    <div class="img-badge"><i class="fa-solid fa-thumbs-up"></i> Personal Attention</div>
+                </div>
+                <div class="why-img-card sub-card">
+                    <img src="assets/zumba.jpg" alt="Zumba group dance fitness session">
+                    <div class="img-badge bg-accent"><i class="fa-solid fa-heart"></i> Vibrant Vibe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Pricing Plans -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal fade-in">
+                <span class="section-badge">MEMBERSHIPS</span>
+                <h2 class="section-title">Transparent & Affordable Packages</h2>
+                <p class="section-subtitle">Choose a plan that fits your goals. Start small or commit to a full lifestyle transformation with our premium services.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan 1: Starter -->
+                <div class="pricing-card scroll-reveal slide-up">
+                    <div class="plan-header">
+                        <h3>Starter Plan</h3>
+                        <span class="duration">1 Month Membership</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">2,499</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> General Gym Access</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Group Workout Sessions</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Warmup & Cardio Training</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Dedicated Safety Guidance</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Personalized Diet Chart</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> PCOS/Hormonal Support</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> 1-on-1 Accountability</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block open-modal-btn">Enquire Now</button>
+                </div>
+                
+                <!-- Plan 2: Transformation (Most Popular) -->
+                <div class="pricing-card featured scroll-reveal slide-up" style="animation-delay: 0.1s;">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3>Transformation Plan</h3>
+                        <span class="duration">3 Months Membership</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">5,999</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Full Gym & Cardio Access</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Unlimited Zumba Classes</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Customized Nutrition/Diet Charts</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Monthly Progress Tracker Assessment</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> PCOS & Thyroid Lifestyle Guidance</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Trainer Consultation Call Support</li>
+                        <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Dedicated 1-on-1 Coach</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block open-modal-btn">Book 3-Month Plan</button>
+                </div>
+                
+                <!-- Plan 3: Annual Elite -->
+                <div class="pricing-card scroll-reveal slide-up" style="animation-delay: 0.2s;">
+                    <div class="plan-header">
+                        <h3>Annual Elite Plan</h3>
+                        <span class="duration">12 Months Membership</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">14,999</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> 2 Months Freeze Option</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Unlimited Gym & Group Classes</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Monthly Nutrition Consultation</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Regular Fitness Progress Reports</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> PCOS, Strength & Cardio Protocols</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> Dedicated Safety Support</li>
+                        <li><i class="fa-solid fa-circle-check text-primary"></i> 2 Free Guest Passes Monthly</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block open-modal-btn">Book Annual Elite</button>
+                </div>
+            </div>
+            
+            <div class="text-center pricing-note scroll-reveal fade-in">
+                <p><i class="fa-solid fa-circle-info"></i> All packages have zero hidden admission charges. Student discounts are available at the front desk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Interactive Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal fade-in">
+                <span class="section-badge">GYM GALLERY</span>
+                <h2 class="section-title">Explore Our Facility & Vibrant Atmosphere</h2>
+                <p class="section-subtitle">Take a virtual tour through our modern workout spaces, group training floors, and clean premium ladies gym facilities.</p>
+            </div>
+            
+            <!-- Gallery Grid with dynamic lightbox triggers -->
+            <div class="gallery-grid scroll-reveal scale-up">
+                <div class="gallery-item" onclick="openLightbox('assets/hero_bg.jpg')">
+                    <img src="assets/hero_bg.jpg" alt="Raise The Bar Gym Interior & Cardio Area">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i> Gym Interior</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('assets/zumba.jpg')">
+                    <img src="assets/zumba.jpg" alt="Vibrant Zumba Dance Fitness Class">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i> Zumba Classes</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('assets/strength.jpg')">
+                    <img src="assets/strength.jpg" alt="Woman focusing during Strength Training">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i> Strength Training</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('assets/challenge.jpg')">
+                    <img src="assets/challenge.jpg" alt="High accountability Workout Sessions">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i> Workout Sessions</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Cardio and treadmill zone">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i> Cardio Area</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80" alt="Happy members training in a group">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i> Happy Members</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal fade-in">
+                <span class="section-badge">MEMBER STORIES</span>
+                <h2 class="section-title">What Our Strong Members Say</h2>
+                <p class="section-subtitle">Real feedback from housewives, doctors, and working professionals who completely changed their health at Raise The Bar.</p>
+            </div>
+            
+            <div class="testimonials-slider-container scroll-reveal slide-up">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Losing 15 kg was amazing, but reversing my severe PCOS symptoms and regaining my confidence was the real victory. Mrs. Vaishali Bajpeyi and her dedicated female trainers treat you like family. Highly recommend the 21-Day Challenge!"</p>
+                        <div class="member-details">
+                            <div class="member-avatar bg-primary">AR</div>
+                            <div>
+                                <h4 class="member-name">Aditi R.</h4>
+                                <span class="member-role">Software Engineer, Weight Loss & PCOS Success</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As a absolute beginner, I was nervous about going to a gym. But the ladies-only environment here is so warm, comfortable, and positive. The trainers guide you through every posture. I feel strong and active throughout the day."</p>
+                        <div class="member-details">
+                            <div class="member-avatar bg-accent">PS</div>
+                            <div>
+                                <h4 class="member-name">Priya S.</h4>
+                                <span class="member-role">Homemaker, General Fitness & Strength</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Balancing hospital shifts and family left me with zero energy. The flexible timings, personalized diet plans, and daily motivation here completely turned my lifestyle around. The community of ladies here is incredibly uplifting!"</p>
+                        <div class="member-details">
+                            <div class="member-avatar bg-primary">NK</div>
+                            <div>
+                                <h4 class="member-name">Dr. Neha K.</h4>
+                                <span class="member-role">Pediatrician, Energy Boost & Lifestyle Change</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Navigations -->
+                <div class="slider-nav">
+                    <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous Testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-arrow next" id="sliderNext" aria-label="Next Testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal fade-in">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find quick answers to common queries regarding memberships, trainers, timings, and training details.</p>
+            </div>
+            
+            <div class="faq-accordion-container scroll-reveal slide-up">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who can join Raise The Bar?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We welcome women of all age groups (from 18 to 60+). Our members include college students, working professionals, homemakers, doctors, teachers, business owners, and mothers looking to improve their health and fitness.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do beginners need prior workout experience?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely not! Most of our members join as complete beginners. Our friendly trainers guide you step-by-step on how to use machines, perform weightlifting correctly, and safely progress week by week.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide personal training and custom diet plans?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we do. We offer dedicated 1-on-1 personal training packages for rapid results. Additionally, all quarterly, half-yearly, and annual members receive standard customized diet plans using home-cooked Indian foods tailored to their specific fitness goals.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the gym timings? Is it flexible?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We are open Monday to Saturday from 6:00 AM to 12:30 PM (Morning Session) and 4:30 PM to 8:30 PM (Evening Session). Members can choose any slot that fits their schedule, providing complete flexibility for working women and housewives.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you have female trainers at the gym?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Our training staff consists entirely of certified, experienced female fitness coaches who understand female physiology, hormonal shifts (like PCOS/thyroid), pregnancy recovery, and strength progression.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I join? Can I book a free trial pass?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can book a 2-Day Free Trial Pass directly through our website by clicking the 'Book Free Trial' button. Fill in your details, and you will receive a free trial confirmation. Alternatively, feel free to visit our studio in Chhatrapati Sambhajinagar directly!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section & Location Map -->
+    <section class="contact-section" id="contact">
+        <div class="container grid-2">
+            <!-- Contact details and Map -->
+            <div class="contact-info-block scroll-reveal fade-in">
+                <span class="section-badge">FIND US</span>
+                <h2 class="section-title">Visit Our Premium Studio</h2>
+                <p class="contact-intro-text">Have questions or want to look at the gym facility before joining? Feel free to drop by or reach out through call/WhatsApp. We are here to guide you.</p>
+                
+                <div class="contact-details-list">
+                    <div class="contact-detail-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Gym Address</h4>
+                            <p>Plot No. 12, Behind Cannaught Place, CIDCO, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra 431003, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <h4>Call Enquiries</h4>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 6:00 AM - 12:30 PM & 4:30 PM - 8:30 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Styled Map container representation -->
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fa-solid fa-map-location-dot map-icon-big"></i>
+                        <h4>Raise The Bar Ladies Gym Location</h4>
+                        <p>CIDCO, Chhatrapati Sambhajinagar</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm"><i class="fa-solid fa-location-arrow"></i> Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact & Trial Booking Form -->
+            <div class="contact-form-block scroll-reveal slide-up">
+                <h3 class="form-title">Start Your Success Story</h3>
+                <p>Send a message, and Mrs. Vaishali or one of our certified trainers will get back to you within 24 hours.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="E.g. Priya Sharma" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required placeholder="E.g. +91 98765 43210" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="program">Interested Program</label>
+                        <select id="program" required class="form-control">
+                            <option value="" disabled selected>Choose a Program</option>
+                            <option value="weight-loss">Weight Loss Program</option>
+                            <option value="weight-gain">Weight Gain Program</option>
+                            <option value="zumba">Zumba Dance Classes</option>
+                            <option value="pcos">PCOS & Thyroid Management</option>
+                            <option value="pt">1-on-1 Personal Training</option>
+                            <option value="challenge">21-Day Transformation Challenge</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message (Optional)</label>
+                        <textarea id="message" rows="4" placeholder="E.g. I want to lose weight and need guidance on PCOS management..." class="form-control"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Submit Enquiry &rarr;</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo-main">RAISE THE BAR</span>
+                <span class="footer-logo-sub">LADIES GYM</span>
+                <p>An elite, women-only transformation studio helping ladies in Chhatrapati Sambhajinagar build strength, confidence, and vibrant health through expert coaching.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Studio</a></li>
+                    <li><a href="#services">Our Programs</a></li>
+                    <li><a href="#challenge">21-Day Challenge</a></li>
+                    <li><a href="#transformations">Before & After</a></li>
+                    <li><a href="#pricing">Membership Plans</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Empowerment</h4>
+                <ul>
+                    <li><a href="#services">Weight Loss Tips</a></li>
+                    <li><a href="#services">PCOS Training protocols</a></li>
+                    <li><a href="#services">Zumba Schedules</a></li>
+                    <li><a href="#faq">Member FAQs</a></li>
+                    <li><a href="#contact">Contact Support</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <p><i class="fa-solid fa-location-dot text-primary"></i> CIDCO, Chhatrapati Sambhajinagar (Aurangabad), MH, India</p>
+                <p><i class="fa-solid fa-phone text-primary"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:info@raisethebarladiesgym.com">info@raisethebarladiesgym.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Raise The Bar Ladies Gym. All Rights Reserved. Designed for Women's Health.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Quick-Action Bar (Sticky Bottom) -->
+    <div class="mobile-action-bar">
+        <a href="https://wa.me/919876543210?text=Hi%20Raise%20The%20Bar%20Gym!%20I'm%20interested%20in%20a%20free%20trial%20class." target="_blank" class="action-btn whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        <button class="action-btn trial-btn open-modal-btn">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book Trial</span>
+        </button>
+        <a href="tel:+919876543210" class="action-btn call-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Now</span>
+        </a>
+    </div>
+
+    <!-- Booking Trial Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-badge"><i class="fa-solid fa-gem"></i> EXCLUSIVE PASS</span>
+                <h3>Book Your Free Trial Session</h3>
+                <p>Experience a safe, motivating environment. Fill in the form and Mrs. Vaishali's team will confirm your session slot.</p>
+            </div>
+            <form id="modalForm" class="modal-form">
+                <div class="form-group">
+                    <label for="modalName">Full Name</label>
+                    <input type="text" id="modalName" required placeholder="E.g. Sneha Deshmukh" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Phone Number</label>
+                    <input type="tel" id="modalPhone" required placeholder="E.g. +91 99999 88888" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalGoal">Fitness Goal</label>
+                    <select id="modalGoal" required class="form-control">
+                        <option value="" disabled selected>Select Your Primary Goal</option>
+                        <option value="weight-loss">Weight Loss Program</option>
+                        <option value="weight-gain">Weight Gain Program</option>
+                        <option value="zumba">Zumba Dance Classes</option>
+                        <option value="pcos">PCOS & Thyroid Management</option>
+                        <option value="strength">Strength & Core Tone</option>
+                        <option value="challenge">21-Day Challenge</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modalTime">Preferred Training Slot</label>
+                    <select id="modalTime" required class="form-control">
+                        <option value="" disabled selected>Select Preferred Slot</option>
+                        <option value="morning-early">Morning: 6:00 AM - 8:30 AM</option>
+                        <option value="morning-mid">Morning: 8:30 AM - 10:30 AM</option>
+                        <option value="morning-late">Morning: 10:30 AM - 12:30 PM</option>
+                        <option value="evening-early">Evening: 4:30 PM - 6:30 PM</option>
+                        <option value="evening-late">Evening: 6:30 PM - 8:30 PM</option>
+                    </select>
+                </div>
+                
+                <!-- Ticket Disclaimer -->
+                <p class="modal-disclaimer"><i class="fa-solid fa-lock-open text-accent"></i> By submitting, you confirm you are booking for a women-only facility.</p>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Generate Free Pass &rarr;</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Ticket Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="ticket-card">
+            <button class="modal-close" id="successClose" aria-label="Close Ticket">&times;</button>
+            <div class="ticket-top">
+                <i class="fa-solid fa-circle-check ticket-success-icon"></i>
+                <h3>Pass Generated Successfully!</h3>
+                <p>Welcome to Raise The Bar Ladies Gym</p>
+            </div>
+            <div class="ticket-divider">
+                <div class="ticket-notch left"></div>
+                <div class="ticket-dashed-line"></div>
+                <div class="ticket-notch right"></div>
+            </div>
+            <div class="ticket-body">
+                <div class="ticket-info">
+                    <div class="info-row">
+                        <span>MEMBER TYPE</span>
+                        <strong class="text-primary">VIP TRIAL GUEST</strong>
+                    </div>
+                    <div class="info-row">
+                        <span>TICKET ID</span>
+                        <strong id="ticketId">RTB-XXXXX</strong>
+                    </div>
+                    <div class="info-row">
+                        <span>VISITOR NAME</span>
+                        <strong id="ticketName">Sneha Deshmukh</strong>
+                    </div>
+                    <div class="info-row">
+                        <span>GOAL</span>
+                        <strong id="ticketGoal">Weight Loss</strong>
+                    </div>
+                    <div class="info-row">
+                        <span>PREFERRED SLOT</span>
+                        <strong id="ticketSlot">6:30 PM - 8:30 PM</strong>
+                    </div>
+                    <div class="info-row">
+                        <span>LOCATION</span>
+                        <strong>CIDCO, Chhatrapati Sambhajinagar</strong>
+                    </div>
+                </div>
+                
+                <div class="ticket-qr-section">
+                    <i class="fa-solid fa-qrcode qr-icon"></i>
+                    <p class="qr-text">Present this ticket at the reception desk to redeem your 2-Day Free Trial pass.</p>
+                </div>
+                
+                <button class="btn btn-primary btn-block" id="successDoneBtn">Awesome, See You There!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal-overlay" id="lightboxModal" style="background-color: rgba(0, 0, 0, 0.95);">
+        <div class="lightbox-container">
+            <button class="modal-close" id="lightboxClose" style="color: #fff; font-size: 40px; top: 20px; right: 20px;">&times;</button>
+            <img src="" alt="Zoomed Gallery Image" id="lightboxImage" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
