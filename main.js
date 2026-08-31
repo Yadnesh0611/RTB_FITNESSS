@@ -331,18 +331,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const program = programSelect ? programSelect.value : 'General Visit';
       const slot = slotSelect ? slotSelect.value : 'Flexible';
 
-      // WhatsApp message formatted for Vaishali Ma'am (9890426515)
+      // Clean, short & sorted WhatsApp message for Vaishali Ma'am (9890426515)
       const waMessage = 
-`Hello Vaishali Ma'am! 👋
-I would like to schedule a visit to Raise The Bar (RTB) Fitness Studio.
+`Hi Vaishali Ma'am, I want to schedule a visit to RTB Studio.
 
-📋 *Booking Details:*
-• *Name:* ${name}
-• *Phone:* ${phone}
-• *Interested Program:* ${program}
-• *Preferred Time Slot:* ${slot}
+• Name: ${name}
+• Phone: ${phone}
+• Program: ${program}
+• Batch: ${slot}
 
-Please let me know the available timings. Thank you!`;
+Please let me know the available timings.`;
 
       const whatsappUrl = `https://wa.me/919890426515?text=${encodeURIComponent(waMessage)}`;
 
