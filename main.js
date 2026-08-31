@@ -318,34 +318,71 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (visitForm) {
-
     visitForm.addEventListener('submit', (e) => {
-
       e.preventDefault();
 
-      const name = document.getElementById('visitorName').value;
+      const nameInput = document.getElementById('visitorName');
+      const phoneInput = document.getElementById('visitorPhone');
+      const programSelect = document.getElementById('preferredProgram');
+      const slotSelect = document.getElementById('preferredSlot');
 
+      const name = nameInput ? nameInput.value.trim() : 'Visitor';
+      const phone = phoneInput ? phoneInput.value.trim() : '';
+      const program = programSelect ? programSelect.value : 'General Visit';
+      const slot = slotSelect ? slotSelect.value : 'Flexible';
+
+      // WhatsApp message formatted for Vaishali Ma'am (9890426515)
+      const waMessage = 
+`Hello Vaishali Ma'am! 👋
+I would like to schedule a visit to Raise The Bar (RTB) Fitness Studio.
+
+📋 *Booking Details:*
+• *Name:* ${name}
+• *Phone:* ${phone}
+• *Interested Program:* ${program}
+• *Preferred Time Slot:* ${slot}
+
+Please let me know the available timings. Thank you!`;
+
+      const whatsappUrl = `https://wa.me/919890426515?text=${encodeURIComponent(waMessage)}`;
+
+      // Open WhatsApp chat in a new tab / app
+      window.open(whatsappUrl, '_blank');
+
+      // Update Modal content to show immediate WhatsApp transition feedback
       const modalContent = visitForm.parentElement;
+      if (modalContent) {
+        modalContent.innerHTML = `
+          <div style="text-align: center; padding: 1.5rem 0.5rem;">
+            <div style="width: 65px; height: 65px; border-radius: 50%; background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.25rem auto; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
 
-      modalContent.innerHTML = `
-        <div style="text-align: center; padding: 2rem 1rem;">
-          <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--color-secondary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.5rem auto;">
-            <i class="fa-solid fa-heart"></i>
+            <h3 style="font-size: 1.85rem; margin-bottom: 0.75rem; font-family: var(--font-serif); color: var(--color-primary);">
+              Opening WhatsApp with Vaishali Ma'am...
+            </h3>
+
+            <p style="color: var(--color-text-muted); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">
+              Thank you, <strong>${name}</strong>! Your visit details have been pre-filled. Simply press <strong>Send</strong> on WhatsApp to connect directly with Vaishali Ma'am.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; max-width: 290px; margin: 0 auto;">
+              <a href="${whatsappUrl}" target="_blank" class="btn btn-whatsapp" style="width: 100%; justify-content: center; background: #25D366; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Open WhatsApp Chat</span>
+              </a>
+              <button class="btn btn-secondary" id="modalCloseSuccessBtn" style="width: 100%;">
+                Done & Return to Site
+              </button>
+            </div>
           </div>
+        `;
 
-          <h3 style="font-size: 2rem; margin-bottom: 0.75rem; font-family: var(--font-serif); color: var(--color-primary);">
-            We Can't Wait To Welcome You, ${name}!
-          </h3>
-
-          <p style="color: var(--color-text-muted); font-size: 1.05rem; margin-bottom: 2rem;">
-            Your visit request has been received. Our team will reach out warmly via phone/WhatsApp to confirm your preferred timing.
-          </p>
-
-          <button class="btn btn-primary" onclick="location.reload()">
-            Return To RTB
-          </button>
-        </div>
-      `;
+        const successCloseBtn = document.getElementById('modalCloseSuccessBtn');
+        if (successCloseBtn) {
+          successCloseBtn.addEventListener('click', closeModal);
+        }
+      }
     });
   }
 

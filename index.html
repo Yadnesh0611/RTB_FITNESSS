@@ -43,6 +43,10 @@
           <li><a href="#team" class="nav-link">Team</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <button class="btn btn-secondary nav-cta-btn open-modal-btn" aria-label="Schedule a visit with Vaishali Ma'am">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Schedule Visit</span>
+        </button>
       </div>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false">
@@ -74,11 +78,11 @@
       </ul>
       
       <div class="mobile-nav-actions">
-        <a href="#contact" class="btn btn-secondary mobile-nav-btn open-modal-btn">
+        <button class="btn btn-secondary mobile-nav-btn open-modal-btn" aria-label="Schedule a visit with Vaishali Ma'am">
           <i class="fa-regular fa-calendar-check"></i>
           <span>Schedule Visit</span>
-        </a>
-        <a href="https://wa.me/919403487042" class="mobile-nav-wa-link" target="_blank" rel="noopener noreferrer">
+        </button>
+        <a href="https://wa.me/919890426515?text=Hi%20Vaishali%20Ma'am!%20I'm%20interested%20in%20visiting%20Raise%20The%20Bar%20(RTB)%20Fitness%20Studio." class="mobile-nav-wa-link" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
         </a>
       </div>
@@ -694,30 +698,41 @@
     <div class="modal-content glass-card-modal">
       <button class="modal-close" id="modalClose" aria-label="Close dialog">&times;</button>
       <div class="modal-header">
-        <span class="modal-subtitle">You Are Welcome Here</span>
+        <span class="modal-subtitle">Direct with Vaishali Ma'am</span>
         <h3 class="modal-title">Schedule Your Visit To RTB</h3>
-        <p class="modal-desc">Take your first step into a warm, supportive space. No pressure, no judgements.</p>
+        <p class="modal-desc">Take your first step into a warm, supportive space. Your details will be sent directly to Vaishali Ma'am on WhatsApp.</p>
       </div>
       
       <form class="visit-form" id="visitForm">
         <div class="form-group">
           <label for="visitorName">Your Name</label>
-          <input type="text" id="visitorName" placeholder="Enter your full name" required>
+          <input type="text" id="visitorName" placeholder="Enter your full name" required autocomplete="name">
         </div>
         <div class="form-group">
           <label for="visitorPhone">Phone Number</label>
-          <input type="tel" id="visitorPhone" placeholder="Enter your phone number" required>
+          <input type="tel" id="visitorPhone" placeholder="Enter your 10-digit mobile number" required autocomplete="tel">
         </div>
         <div class="form-group">
           <label for="preferredProgram">Interested Program</label>
           <select id="preferredProgram">
-            <option value="personal-training">Personal Training</option>
-            <option value="aerobics-zumba">Aerobics & Zumba</option>
-            <option value="functional">Functional Workout</option>
-            <option value="general">Studio Visit & Guidance</option>
+            <option value="Personal Training (Weight Loss & Toning)">Personal Training (Weight Loss & Toning)</option>
+            <option value="Aerobics & Zumba Dance Workout" selected>Aerobics & Zumba Dance Workout</option>
+            <option value="Functional & Core Strength Workout">Functional & Core Strength Workout</option>
+            <option value="Studio Tour & Personalized Guidance">Studio Tour & Personalized Guidance</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary form-submit-btn">Confirm Visit Request</button>
+        <div class="form-group">
+          <label for="preferredSlot">Preferred Time Slot</label>
+          <select id="preferredSlot">
+            <option value="Morning Batch (6:00 AM – 12:00 PM)">Morning Batch (6:00 AM – 12:00 PM)</option>
+            <option value="Evening Batch (5:00 PM – 8:00 PM)">Evening Batch (5:00 PM – 8:00 PM)</option>
+            <option value="Flexible / Any Time">Flexible / Any Time</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.6rem;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i>
+          <span>Schedule with Vaishali Ma'am</span>
+        </button>
       </form>
     </div>
   </div>
