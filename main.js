@@ -258,4 +258,26 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
+const mobileToggle = document.getElementById('mobileToggle');
+const navMenu = document.getElementById('navMenu');
+
+if (mobileToggle && navMenu) {
+  mobileToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+
+    const icon = mobileToggle.querySelector('i');
+    icon.classList.toggle('fa-bars-staggered');
+    icon.classList.toggle('fa-xmark');
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+
+      const icon = mobileToggle.querySelector('i');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars-staggered');
+    });
+  });
+}
 });
