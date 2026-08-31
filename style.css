@@ -1758,10 +1758,10 @@ ul {
   width: 100%;
   margin-top: 1rem;
 }
-
-
 /* RESPONSIVE DESIGN */
+
 @media (max-width: 992px) {
+
   .navbar-wrapper {
     width: calc(100% - 2rem);
     top: 0.75rem;
@@ -1772,6 +1772,7 @@ ul {
     width: 100%;
   }
 
+  /* MOBILE NAVIGATION DRAWER */
   .nav-menu {
     position: fixed;
     top: 0;
@@ -1779,24 +1780,34 @@ ul {
     width: 82%;
     max-width: 380px;
     height: 100vh;
-    background: rgba(39, 15, 31, 0.96);
+
+    background: rgba(39, 15, 31, 0.98);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
+
     padding: 3rem 2rem;
-    transition: var(--transition-smooth);
+
+    transition: right 0.4s ease;
     box-shadow: var(--shadow-lg);
+
+    z-index: 1000;
   }
 
+  /* THIS OPENS THE MENU */
   .nav-menu.active {
     right: 0;
   }
 
   .nav-links {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.75rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   .nav-link {
@@ -1804,12 +1815,31 @@ ul {
     font-size: 1.2rem;
   }
 
-  .mobile-toggle {
-    display: block;
-    z-index: 1001;
+  .nav-cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
   }
 
-  .experience-grid, .contact-grid, .footer-grid {
+  /* HAMBURGER BUTTON */
+  .mobile-toggle {
+    display: block;
+    position: relative;
+    z-index: 1001;
+
+    background: none;
+    border: none;
+
+    font-size: 1.5rem;
+    color: #FFFFFF;
+
+    cursor: pointer;
+  }
+
+  .experience-grid,
+  .contact-grid,
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1818,7 +1848,19 @@ ul {
   }
 }
 
+
 @media (max-width: 600px) {
+
+  .navbar-wrapper {
+    width: calc(100% - 1rem);
+    padding: 0.65rem 1rem;
+  }
+
+  .official-logo-nav {
+    height: 42px;
+    max-width: 150px;
+  }
+
   .hero-content {
     margin-top: 5.5rem;
     padding-top: 1rem;
@@ -1835,4 +1877,18 @@ ul {
   .comparison-slider {
     height: 360px;
   }
+
+  .nav-menu {
+    width: 88%;
+    max-width: none;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+  }
 }
+
