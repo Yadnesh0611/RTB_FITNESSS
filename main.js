@@ -33,52 +33,84 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
+    if (currentSectionId) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
 
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('active');
-      }
-    });
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
   });
 
 
-  /* 2. MOBILE MENU DRAWER */
+  /* 2. MOBILE MENU DRAWER & OVERLAY */
   const mobileToggle = document.getElementById('mobileToggle');
-  const navMenu = document.getElementById('navMenu');
+  const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+  const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+  const mobileNavClose = document.getElementById('mobileNavClose');
 
-  if (mobileToggle && navMenu) {
-
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-
+  const openMobileNav = () => {
+    if (mobileNavDrawer) mobileNavDrawer.classList.add('active');
+    if (mobileNavBackdrop) mobileNavBackdrop.classList.add('active');
+    if (mobileToggle) {
+      mobileToggle.setAttribute('aria-expanded', 'true');
       const icon = mobileToggle.querySelector('i');
-
       if (icon) {
-        if (navMenu.classList.contains('active')) {
-          icon.classList.remove('fa-bars-staggered');
-          icon.classList.add('fa-xmark');
-        } else {
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars-staggered');
-        }
+        icon.classList.remove('fa-bars-staggered');
+        icon.classList.add('fa-xmark');
+      }
+    }
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMobileNav = () => {
+    if (mobileNavDrawer) mobileNavDrawer.classList.remove('active');
+    if (mobileNavBackdrop) mobileNavBackdrop.classList.remove('active');
+    if (mobileToggle) {
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      const icon = mobileToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars-staggered');
+      }
+    }
+    document.body.style.overflow = '';
+  };
+
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (mobileNavDrawer && mobileNavDrawer.classList.contains('active')) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
       }
     });
-
-    // Close menu when clicking nav link
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-
-        const icon = mobileToggle.querySelector('i');
-
-        if (icon) {
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars-staggered');
-        }
-      });
-    });
   }
+
+  if (mobileNavClose) {
+    mobileNavClose.addEventListener('click', closeMobileNav);
+  }
+
+  if (mobileNavBackdrop) {
+    mobileNavBackdrop.addEventListener('click', closeMobileNav);
+  }
+
+  // Close drawer on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileNavDrawer && mobileNavDrawer.classList.contains('active')) {
+      closeMobileNav();
+    }
+  });
+
+  // Close menu when clicking any nav link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileNav();
+    });
+  });
 
 
   /* 3. BEFORE & AFTER TRANSFORMATION COMPARISON SLIDER */

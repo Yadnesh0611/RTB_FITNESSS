@@ -45,11 +45,50 @@
         </ul>
       </div>
 
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false">
         <i class="fa-solid fa-bars-staggered"></i>
       </button>
     </nav>
   </header>
+
+  <!-- MOBILE NAVIGATION DRAWER & BACKDROP -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-nav-header">
+      <a href="#hero" class="mobile-nav-brand" aria-label="Raise The Bar">
+        <img src="assets/rtb_official_logo.jpg" alt="RTB Official Logo" class="mobile-nav-logo">
+      </a>
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+        <li><a href="#why-rtb" class="nav-link"><i class="fa-solid fa-gem"></i> <span>Why RTB</span></a></li>
+        <li><a href="#programs" class="nav-link"><i class="fa-solid fa-dumbbell"></i> <span>Programs</span></a></li>
+        <li><a href="#experience" class="nav-link"><i class="fa-solid fa-star"></i> <span>Experience</span></a></li>
+        <li><a href="#team" class="nav-link"><i class="fa-solid fa-users"></i> <span>Team</span></a></li>
+        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-location-dot"></i> <span>Contact</span></a></li>
+      </ul>
+      
+      <div class="mobile-nav-actions">
+        <a href="#contact" class="btn btn-secondary mobile-nav-btn open-modal-btn">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Schedule Visit</span>
+        </a>
+        <a href="https://wa.me/919403487042" class="mobile-nav-wa-link" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <span class="mobile-nav-badge">Women-First Fitness Studio</span>
+      <p class="mobile-nav-location"><i class="fa-solid fa-map-pin"></i> Ulkanagari, Chhatrapati Sambhajinagar</p>
+    </div>
+  </aside>
 
   <!-- SECTION 02: HERO (100vh with Ambient Glow & Vignette) -->
   <section class="hero-section" id="hero">
@@ -683,6 +722,6 @@
     </div>
   </div>
 
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
