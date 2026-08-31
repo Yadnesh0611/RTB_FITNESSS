@@ -2,6 +2,11 @@
    RAISE THE BAR (RTB) DANCE & FITNESS STUDIO — INTERACTIVE LOGIC
    ========================================================================== */
 
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Real-Time Analytics
+inject();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* 1. STICKY GLASS NAVIGATION SCROLL EFFECT */
