@@ -277,22 +277,22 @@ ul {
   top: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 3rem);
-  max-width: 1280px;
+  width: auto;
+  max-width: calc(100% - 3rem);
   z-index: 1000;
-  padding: 0.85rem 1.5rem;
+  padding: 0.75rem 2.25rem;
   border-radius: var(--radius-full);
-  background: rgba(39, 15, 31, 0.45);
+  background: rgba(39, 15, 31, 0.55);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   transition: var(--transition-smooth);
 }
 
 .navbar-wrapper.scrolled {
   top: 0.75rem;
-  background: rgba(39, 15, 31, 0.88);
+  background: rgba(39, 15, 31, 0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-color: rgba(197, 160, 89, 0.25);
@@ -303,6 +303,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 3.5rem;
   padding: 0;
 }
 
@@ -492,6 +493,23 @@ ul {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+.hero-actions .btn-secondary {
+  box-shadow: 0 0 15px rgba(231, 111, 81, 0.45);
+  border-color: rgba(231, 111, 81, 0.7);
+  animation: heroButtonGlow 2.5s infinite alternate;
+}
+
+@keyframes heroButtonGlow {
+  from {
+    box-shadow: 0 0 8px rgba(231, 111, 81, 0.3), 0 0 2px rgba(231, 111, 81, 0.1);
+    border-color: rgba(231, 111, 81, 0.5);
+  }
+  to {
+    box-shadow: 0 0 22px rgba(231, 111, 81, 0.85), 0 0 10px rgba(231, 111, 81, 0.45);
+    border-color: rgba(231, 111, 81, 1);
+  }
 }
 
 .scroll-indicator {
@@ -1384,6 +1402,23 @@ ul {
   flex-wrap: wrap;
 }
 
+.cta-buttons .btn-secondary {
+  box-shadow: 0 0 15px rgba(231, 111, 81, 0.45);
+  border-color: rgba(231, 111, 81, 0.7);
+  animation: ctaButtonGlow 2.5s infinite alternate;
+}
+
+@keyframes ctaButtonGlow {
+  from {
+    box-shadow: 0 0 8px rgba(231, 111, 81, 0.3), 0 0 2px rgba(231, 111, 81, 0.1);
+    border-color: rgba(231, 111, 81, 0.5);
+  }
+  to {
+    box-shadow: 0 0 22px rgba(231, 111, 81, 0.85), 0 0 10px rgba(231, 111, 81, 0.45);
+    border-color: rgba(231, 111, 81, 1);
+  }
+}
+
 
 /* ==========================================================================
    SECTION 11: CONTACT
@@ -1730,6 +1765,11 @@ ul {
   .navbar-wrapper {
     width: calc(100% - 2rem);
     top: 0.75rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .navbar {
+    width: 100%;
   }
 
   .nav-menu {
@@ -1756,7 +1796,7 @@ ul {
   .nav-links {
     flex-direction: column;
     gap: 1.75rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 0;
   }
 
   .nav-link {
