@@ -1830,7 +1830,6 @@ ul {
   height: 65px;
   max-width: 220px;
   object-fit: contain;
-  mix-blend-mode: screen;
   margin-bottom: 1.5rem;
 }
 .footer-tagline {
